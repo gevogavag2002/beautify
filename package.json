@@ -27,14 +27,15 @@
     "typescript": "~6.0.3"
   },
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "start": "expo start --dev-client --lan",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
     "lint": "expo lint",
     "typecheck": "tsc --noEmit",
     "doctor": "expo-doctor",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "android:apk": "expo prebuild --platform android --no-install && cd android && ./gradlew assembleDebug -PreactNativeArchitectures=arm64-v8a"
   },
   "private": true
 }
