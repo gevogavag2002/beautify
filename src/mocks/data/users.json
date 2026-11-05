@@ -1,0 +1,29 @@
+[
+  {
+    "id": "usr-client-1",
+    "role": "client",
+    "fullName": "Ani Karapetyan",
+    "gender": "female",
+    "phone": "+37491204482",
+    "email": "ani.karapetyan@mail.com",
+    "phoneConfirmed": true,
+    "emailConfirmed": true,
+    "photoUrl": null,
+    "createdAt": "2026-03-10T10:00:00Z",
+    "password": "sunny-days-7"
+  },
+  {
+    "id": "usr-provider-1",
+    "role": "provider",
+    "fullName": "Aram Grigoryan",
+    "gender": "male",
+    "phone": "+37491555482",
+    "email": "aram.grigoryan@mail.com",
+    "phoneConfirmed": true,
+    "emailConfirmed": true,
+    "photoUrl": null,
+    "createdAt": "2026-01-15T10:00:00Z",
+    "password": "fade-room-24",
+    "providerId": "prv-fade-room"
+  }
+]

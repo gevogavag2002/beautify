@@ -14,8 +14,11 @@ description: Build a screen from the Beautify design canvas. Use when the user a
    or `Button`, `input`→`Input`, scrollable lists→`FlatList`/`ScrollView`.
 3. Put the screen in `src/features/<feature>/screens/<Name>Screen.tsx`; reuse `components/ui`
    primitives, add missing primitives there first.
-4. Mock data: keep it in `src/features/<feature>/mock.ts` until the backend endpoint exists,
-   behind the same TanStack Query hook signature.
+4. Mock data (mandatory, same change): add/extend `src/mocks/data/<domain>.json`, add mock
+   handlers in `src/mocks/handlers/<domain>.ts` for every endpoint the screen needs, register
+   them in `handlers/index.ts`, add `src/api/<domain>Api.ts` methods and `src/types/<domain>.ts`.
+   The screen reads data only through a TanStack Query hook in its feature. See
+   `.claude/rules/mocks.md`.
 5. Register the route in `app/` and wire navigation targets to the links the canvas uses.
 6. Check: `pnpm typecheck`, both light and dark, tap targets ≥44, strings via i18n.
 

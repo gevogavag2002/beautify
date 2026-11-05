@@ -1,0 +1,47 @@
+{
+  "providerTypes": [
+    { "id": "pt-barber", "slug": "barber", "name": "Barber" },
+    { "id": "pt-hair", "slug": "hair", "name": "Hairdresser" },
+    { "id": "pt-nails", "slug": "nails", "name": "Nail artist" },
+    { "id": "pt-lashes", "slug": "lashes", "name": "Lash & brow" },
+    { "id": "pt-makeup", "slug": "makeup", "name": "Makeup artist" },
+    { "id": "pt-cosmo", "slug": "cosmo", "name": "Cosmetologist" }
+  ],
+  "serviceCategories": [
+    {
+      "id": "cat-hair",
+      "name": "Hair",
+      "services": [
+        { "id": "svc-cut", "categoryId": "cat-hair", "name": "Haircut" },
+        { "id": "svc-fade", "categoryId": "cat-hair", "name": "Skin fade" },
+        { "id": "svc-kids", "categoryId": "cat-hair", "name": "Kids cut" },
+        { "id": "svc-colour", "categoryId": "cat-hair", "name": "Hair colouring" }
+      ]
+    },
+    {
+      "id": "cat-beard",
+      "name": "Beard & shave",
+      "services": [
+        { "id": "svc-beard", "categoryId": "cat-beard", "name": "Beard trim" },
+        { "id": "svc-shave", "categoryId": "cat-beard", "name": "Hot towel shave" }
+      ]
+    },
+    {
+      "id": "cat-nails",
+      "name": "Nails",
+      "services": [
+        { "id": "svc-mani", "categoryId": "cat-nails", "name": "Manicure" },
+        { "id": "svc-pedi", "categoryId": "cat-nails", "name": "Pedicure" },
+        { "id": "svc-gel", "categoryId": "cat-nails", "name": "Gel polish" }
+      ]
+    },
+    {
+      "id": "cat-lashes",
+      "name": "Lashes & brows",
+      "services": [
+        { "id": "svc-lash", "categoryId": "cat-lashes", "name": "Lash extensions" },
+        { "id": "svc-brow", "categoryId": "cat-lashes", "name": "Brow shaping" }
+      ]
+    }
+  ]
+}

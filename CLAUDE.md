@@ -20,7 +20,8 @@ separate `*.dc.html` files inside it). Never invent UI; take it from the canvas.
 
 ## Architecture
 
-Read `.claude/rules/architecture.md` before creating or moving any file. In short:
+Read `.claude/rules/architecture.md` before creating or moving any file, and
+`.claude/rules/mocks.md` before adding any screen or API call. In short:
 
 ```
 app/          routes only (thin files that render a screen from src/features)
@@ -33,6 +34,7 @@ src/
   store/      zustand stores (global only)
   hooks/      shared hooks
   theme/      design tokens (tokens.js is the single source, also feeds tailwind.config.js)
+  mocks/      mock handlers + JSON seed data; every screen ships with its mocks (rules/mocks.md)
   utils/, constants/, types/, i18n/, locales/, providers/
 assets/fonts  Nunito
 ```

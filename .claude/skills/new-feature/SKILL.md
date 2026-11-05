@@ -20,9 +20,12 @@ src/features/<name>/
 Then:
 
 1. Add `src/api/<name>Api.ts` with methods calling `apiV1` from `@/services/axiosInstance`.
-2. Add shared contract types in `src/types/<name>.ts` if the backend returns them.
-3. Add route files in the right `app/` group that render the screen (≤10 lines each).
-4. Add translation keys to `src/locales/en.json` (and ru, hy) under `<name>.*`.
-5. Run `pnpm typecheck`.
+2. Add shared contract types in `src/types/<name>.ts` and export them from `src/types/index.ts`.
+3. Add mock data: `src/mocks/data/<name>.json`, handlers in `src/mocks/handlers/<name>.ts`
+   matching the api paths exactly, register in `src/mocks/handlers/index.ts`
+   (`.claude/rules/mocks.md`).
+4. Add route files in the right `app/` group that render the screen (≤10 lines each).
+5. Add translation keys to `src/locales/en.json` (and ru, hy) under `<name>.*`.
+6. Run `pnpm typecheck`.
 
 Follow `.claude/rules/architecture.md`, `naming.md`, `styling.md`.

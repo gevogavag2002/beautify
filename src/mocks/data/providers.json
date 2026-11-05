@@ -1,0 +1,231 @@
+[
+  {
+    "id": "prv-fade-room",
+    "businessName": "The Fade Room",
+    "typeId": "pt-barber",
+    "typeName": "Barber",
+    "about": "Classic cuts and skin fades in the centre of Kentron. Walk-ins welcome when the chair is free.",
+    "address": "12 Tumanyan St, Yerevan",
+    "lat": 40.1811,
+    "lng": 44.5136,
+    "photoUrl": null,
+    "rating": 4.9,
+    "ratingCount": 128,
+    "visits": 312,
+    "autoAccept": false,
+    "workingHours": {
+      "mon": { "open": "10:00", "close": "20:00", "breakStart": "14:00", "breakEnd": "14:30" },
+      "tue": { "open": "10:00", "close": "20:00", "breakStart": "14:00", "breakEnd": "14:30" },
+      "wed": { "open": "10:00", "close": "20:00", "breakStart": "14:00", "breakEnd": "14:30" },
+      "thu": { "open": "10:00", "close": "20:00", "breakStart": "14:00", "breakEnd": "14:30" },
+      "fri": { "open": "10:00", "close": "20:00", "breakStart": "14:00", "breakEnd": "14:30" },
+      "sat": { "open": "10:00", "close": "16:00" },
+      "sun": null
+    },
+    "services": [
+      {
+        "id": "ps-1",
+        "catalogServiceId": "svc-cut",
+        "name": "Haircut",
+        "description": "Scissors or clipper, styled finish",
+        "durationMin": 30,
+        "hidden": false
+      },
+      {
+        "id": "ps-2",
+        "catalogServiceId": "svc-beard",
+        "name": "Beard trim",
+        "description": "Shape, line-up, hot towel",
+        "durationMin": 15,
+        "hidden": false
+      },
+      {
+        "id": "ps-3",
+        "catalogServiceId": "svc-fade",
+        "name": "Skin fade",
+        "description": "Foil shaver blend to zero",
+        "durationMin": 45,
+        "hidden": false
+      },
+      {
+        "id": "ps-4",
+        "catalogServiceId": "svc-kids",
+        "name": "Kids cut",
+        "description": "Under 12",
+        "durationMin": 20,
+        "hidden": true
+      }
+    ],
+    "portfolio": [
+      { "id": "ph-1", "url": "https://picsum.photos/seed/fade1/600", "isCover": true, "order": 0 },
+      { "id": "ph-2", "url": "https://picsum.photos/seed/fade2/600", "isCover": false, "order": 1 },
+      { "id": "ph-3", "url": "https://picsum.photos/seed/fade3/600", "isCover": false, "order": 2 }
+    ]
+  },
+  {
+    "id": "prv-barber-lab",
+    "businessName": "Barber Lab",
+    "typeId": "pt-barber",
+    "typeName": "Barber",
+    "about": null,
+    "address": "5 Sayat-Nova Ave, Yerevan",
+    "lat": 40.1868,
+    "lng": 44.5205,
+    "photoUrl": null,
+    "rating": 4.6,
+    "ratingCount": 90,
+    "visits": 540,
+    "autoAccept": true,
+    "workingHours": {
+      "mon": { "open": "09:00", "close": "19:00" },
+      "tue": { "open": "09:00", "close": "19:00" },
+      "wed": { "open": "09:00", "close": "19:00" },
+      "thu": { "open": "09:00", "close": "19:00" },
+      "fri": { "open": "09:00", "close": "19:00" },
+      "sat": { "open": "10:00", "close": "17:00" },
+      "sun": null
+    },
+    "services": [
+      {
+        "id": "ps-10",
+        "catalogServiceId": "svc-cut",
+        "name": "Haircut",
+        "description": null,
+        "durationMin": 30,
+        "hidden": false
+      },
+      {
+        "id": "ps-11",
+        "catalogServiceId": "svc-shave",
+        "name": "Hot towel shave",
+        "description": null,
+        "durationMin": 25,
+        "hidden": false
+      }
+    ],
+    "portfolio": []
+  },
+  {
+    "id": "prv-nailed-it",
+    "businessName": "Nailed It Studio",
+    "typeId": "pt-nails",
+    "typeName": "Nail artist",
+    "about": "Gel, nail art and care.",
+    "address": "8 Abovyan St, Yerevan",
+    "lat": 40.1835,
+    "lng": 44.5159,
+    "photoUrl": null,
+    "rating": 4.8,
+    "ratingCount": 64,
+    "visits": 210,
+    "autoAccept": false,
+    "workingHours": {
+      "mon": { "open": "10:00", "close": "19:00" },
+      "tue": { "open": "10:00", "close": "19:00" },
+      "wed": { "open": "10:00", "close": "19:00" },
+      "thu": { "open": "10:00", "close": "19:00" },
+      "fri": { "open": "10:00", "close": "19:00" },
+      "sat": { "open": "11:00", "close": "16:00" },
+      "sun": null
+    },
+    "services": [
+      {
+        "id": "ps-20",
+        "catalogServiceId": "svc-mani",
+        "name": "Manicure",
+        "description": null,
+        "durationMin": 45,
+        "hidden": false
+      },
+      {
+        "id": "ps-21",
+        "catalogServiceId": "svc-gel",
+        "name": "Gel polish",
+        "description": null,
+        "durationMin": 60,
+        "hidden": false
+      },
+      {
+        "id": "ps-22",
+        "catalogServiceId": "svc-pedi",
+        "name": "Pedicure",
+        "description": null,
+        "durationMin": 60,
+        "hidden": false
+      }
+    ],
+    "portfolio": [
+      { "id": "ph-20", "url": "https://picsum.photos/seed/nails1/600", "isCover": true, "order": 0 }
+    ]
+  },
+  {
+    "id": "prv-glow-lab",
+    "businessName": "Glow Lab",
+    "typeId": "pt-cosmo",
+    "typeName": "Cosmetologist",
+    "about": "Facial cleansing and skin care.",
+    "address": "21 Mashtots Ave, Yerevan",
+    "lat": 40.19,
+    "lng": 44.505,
+    "photoUrl": null,
+    "rating": 4.8,
+    "ratingCount": 41,
+    "visits": 150,
+    "autoAccept": false,
+    "workingHours": {
+      "mon": { "open": "10:00", "close": "18:00" },
+      "tue": { "open": "10:00", "close": "18:00" },
+      "wed": { "open": "10:00", "close": "18:00" },
+      "thu": { "open": "10:00", "close": "18:00" },
+      "fri": { "open": "10:00", "close": "18:00" },
+      "sat": null,
+      "sun": null
+    },
+    "services": [
+      {
+        "id": "ps-30",
+        "catalogServiceId": "svc-brow",
+        "name": "Facial cleansing",
+        "description": null,
+        "durationMin": 60,
+        "hidden": false
+      }
+    ],
+    "portfolio": []
+  },
+  {
+    "id": "prv-gentlemen",
+    "businessName": "Gentlemen's Corner",
+    "typeId": "pt-barber",
+    "typeName": "Barber",
+    "about": null,
+    "address": "3 Komitas Ave, Yerevan",
+    "lat": 40.2,
+    "lng": 44.52,
+    "photoUrl": null,
+    "rating": 4.7,
+    "ratingCount": 55,
+    "visits": 198,
+    "autoAccept": false,
+    "workingHours": {
+      "mon": { "open": "10:00", "close": "20:00" },
+      "tue": { "open": "10:00", "close": "20:00" },
+      "wed": { "open": "10:00", "close": "20:00" },
+      "thu": { "open": "10:00", "close": "20:00" },
+      "fri": { "open": "10:00", "close": "20:00" },
+      "sat": { "open": "10:00", "close": "18:00" },
+      "sun": null
+    },
+    "services": [
+      {
+        "id": "ps-40",
+        "catalogServiceId": "svc-cut",
+        "name": "Haircut",
+        "description": null,
+        "durationMin": 30,
+        "hidden": false
+      }
+    ],
+    "portfolio": []
+  }
+]
