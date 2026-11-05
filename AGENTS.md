@@ -1,3 +1,5 @@
+> Project conventions live in CLAUDE.md and .claude/rules/. This file is Expo's generic guidance.
+
 This is an Expo/React Native mobile application. Prioritize mobile-first patterns, performance, and cross-platform compatibility.
 
 ## Expo has changed — do not trust your training data

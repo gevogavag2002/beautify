@@ -1,0 +1,57 @@
+# Beautify — mobile app
+
+Booking app for beauty providers (barbers, nail artists, etc.). Clients send booking
+requests, providers accept/decline. Two roles inside one app: **client** and **provider**.
+Backend (Laravel) and web (Vue 3) are built by Armen in separate repos; this repo is the
+Expo / React Native mobile app only.
+
+Design source of truth: the Claude Design canvas
+https://claude.ai/artifact/4bB9fUGV8CR9wRwV9C3fUU (read it with the Artifact tool, screens are
+separate `*.dc.html` files inside it). Never invent UI; take it from the canvas.
+
+## Stack (fixed, do not swap without the team's decision)
+
+- Expo SDK 58, React Native, TypeScript strict, **pnpm** (`pnpm install`, `npx expo install <pkg>`)
+- **Expo Router** (file-based routes in `app/`), typed routes on
+- **NativeWind 4** (Tailwind 3 classes via `className`) for styling
+- TanStack Query for server state, Zustand for global client state (session, role, theme)
+- axios through the single instance in `src/services/axiosInstance.ts`
+- i18n via i18next (`src/i18n`, `src/locales`)
+
+## Architecture
+
+Read `.claude/rules/architecture.md` before creating or moving any file. In short:
+
+```
+app/          routes only (thin files that render a screen from src/features)
+src/
+  features/   one folder per domain: auth, booking, schedule, search, profile, ...
+  components/ui      base primitives on design tokens (Button, Input, Text, Card, Sheet)
+  components/common  shared composite components (not tied to a feature)
+  api/        axios calls grouped per domain object (authApi, bookingsApi, ...)
+  services/   axiosInstance, notifications, storage
+  store/      zustand stores (global only)
+  hooks/      shared hooks
+  theme/      design tokens (tokens.js is the single source, also feeds tailwind.config.js)
+  utils/, constants/, types/, i18n/, locales/, providers/
+assets/fonts  Nunito
+```
+
+## Commands
+
+```bash
+pnpm start            # expo dev server (Expo Go on the phone)
+pnpm typecheck        # tsc --noEmit
+pnpm lint             # expo lint
+pnpm doctor           # expo-doctor
+pnpm format           # prettier
+```
+
+Run `pnpm typecheck` before saying a change is done.
+
+## Way of working
+
+- Build screen by screen, confirm with the user before starting the next part.
+- Explain trade-offs before introducing a new library; ask before adding native modules
+  (they force a move from Expo Go to a development build).
+- Language with the user: Russian. Code, comments, commit messages: English.
