@@ -36,4 +36,6 @@ Register more specific RegExp routes before the generic ones (`/slots$` before `
    `sunny-days-7`, provider `aram.grigoryan@mail.com` / `fade-room-24`).
 6. Mocks are dev-only: `env.useMocks` is false outside `__DEV__`. Never import `src/mocks`
    from app code except `MocksGate`.
-7. Turning mocks off = `EXPO_PUBLIC_USE_MOCKS=false` and restart Metro. Nothing else changes.
+7. Any behaviour the backend must copy (filters, draft accounts, status rules) is written
+   into `docs/BACKLOG.md` → "Backend contract notes" in the same change.
+8. Turning mocks off = `EXPO_PUBLIC_USE_MOCKS=false` and restart Metro. Nothing else changes.

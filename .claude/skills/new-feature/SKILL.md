@@ -27,5 +27,6 @@ Then:
 4. Add route files in the right `app/` group that render the screen (≤10 lines each).
 5. Add translation keys to `src/locales/en.json` (and ru, hy) under `<name>.*`.
 6. Run `pnpm typecheck`.
+7. Record stubs and backend contract decisions in `docs/BACKLOG.md`.
 
 Follow `.claude/rules/architecture.md`, `naming.md`, `styling.md`.
