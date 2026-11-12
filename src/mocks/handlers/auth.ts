@@ -36,7 +36,9 @@ export const authHandlers = (mock: MockAdapter) => {
     if (!/^\+\d{8,15}$/.test(input.phone ?? '')) errors.phone = ['Enter a valid phone number'];
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(input.email ?? ''))
       errors.email = ['Enter a valid email'];
-    if (db.users.some((u) => u.email === input.email))
+    // Only a confirmed account blocks the email. Unconfirmed attempts are drafts: a new
+    // draft is created each time, and whoever enters the email code first wins (see verify).
+    if (db.users.some((u) => u.email === input.email && u.emailConfirmed))
       errors.email = ['This email is already registered'];
     if (!/^(?=.*[a-zA-Z])(?=.*\d).{8,}$/.test(input.password ?? ''))
       errors.password = ['At least 8 characters, with a letter and a number'];
@@ -77,7 +79,11 @@ export const authHandlers = (mock: MockAdapter) => {
     const u = db.users.find((x) => x.id === userId);
     if (!u) return unauthorized();
     if (!/^\d{6}$/.test(code) || code === WRONG_CODE) return validation({ code: ['Wrong code'] });
+    if (db.users.some((x) => x.email === u.email && x.emailConfirmed && x.id !== u.id))
+      return validation({ code: ['This email was just confirmed by another account'] });
     u.emailConfirmed = true;
+    // Drop competing drafts for the same email.
+    db.users = db.users.filter((x) => x.email !== u.email || x.emailConfirmed);
     db.session.userId = u.id;
     return ok({ token: `mock-token-${u.id}`, user: publicUser(u) });
   });

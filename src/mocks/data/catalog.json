@@ -1,46 +1,175 @@
 {
   "providerTypes": [
-    { "id": "pt-barber", "slug": "barber", "name": "Barber" },
-    { "id": "pt-hair", "slug": "hair", "name": "Hairdresser" },
-    { "id": "pt-nails", "slug": "nails", "name": "Nail artist" },
-    { "id": "pt-lashes", "slug": "lashes", "name": "Lash & brow" },
-    { "id": "pt-makeup", "slug": "makeup", "name": "Makeup artist" },
-    { "id": "pt-cosmo", "slug": "cosmo", "name": "Cosmetologist" }
+    {
+      "id": "pt-barber",
+      "slug": "barber",
+      "name": "Barber"
+    },
+    {
+      "id": "pt-hair",
+      "slug": "hair",
+      "name": "Hairdresser"
+    },
+    {
+      "id": "pt-nails",
+      "slug": "nails",
+      "name": "Nail artist"
+    },
+    {
+      "id": "pt-lashes",
+      "slug": "lashes",
+      "name": "Lash & brow"
+    },
+    {
+      "id": "pt-makeup",
+      "slug": "makeup",
+      "name": "Makeup artist"
+    },
+    {
+      "id": "pt-cosmo",
+      "slug": "cosmo",
+      "name": "Cosmetologist"
+    }
   ],
   "serviceCategories": [
     {
       "id": "cat-hair",
       "name": "Hair",
       "services": [
-        { "id": "svc-cut", "categoryId": "cat-hair", "name": "Haircut" },
-        { "id": "svc-fade", "categoryId": "cat-hair", "name": "Skin fade" },
-        { "id": "svc-kids", "categoryId": "cat-hair", "name": "Kids cut" },
-        { "id": "svc-colour", "categoryId": "cat-hair", "name": "Hair colouring" }
+        {
+          "id": "svc-cut",
+          "categoryId": "cat-hair",
+          "name": "Haircut"
+        },
+        {
+          "id": "svc-fade",
+          "categoryId": "cat-hair",
+          "name": "Skin fade"
+        },
+        {
+          "id": "svc-kids",
+          "categoryId": "cat-hair",
+          "name": "Kids cut"
+        },
+        {
+          "id": "svc-colour",
+          "categoryId": "cat-hair",
+          "name": "Hair colouring"
+        }
+      ],
+      "providerTypeIds": [
+        "pt-barber",
+        "pt-hair"
       ]
     },
     {
       "id": "cat-beard",
       "name": "Beard & shave",
       "services": [
-        { "id": "svc-beard", "categoryId": "cat-beard", "name": "Beard trim" },
-        { "id": "svc-shave", "categoryId": "cat-beard", "name": "Hot towel shave" }
+        {
+          "id": "svc-beard",
+          "categoryId": "cat-beard",
+          "name": "Beard trim"
+        },
+        {
+          "id": "svc-shave",
+          "categoryId": "cat-beard",
+          "name": "Hot towel shave"
+        }
+      ],
+      "providerTypeIds": [
+        "pt-barber"
       ]
     },
     {
       "id": "cat-nails",
       "name": "Nails",
       "services": [
-        { "id": "svc-mani", "categoryId": "cat-nails", "name": "Manicure" },
-        { "id": "svc-pedi", "categoryId": "cat-nails", "name": "Pedicure" },
-        { "id": "svc-gel", "categoryId": "cat-nails", "name": "Gel polish" }
+        {
+          "id": "svc-mani",
+          "categoryId": "cat-nails",
+          "name": "Manicure"
+        },
+        {
+          "id": "svc-pedi",
+          "categoryId": "cat-nails",
+          "name": "Pedicure"
+        },
+        {
+          "id": "svc-gel",
+          "categoryId": "cat-nails",
+          "name": "Gel polish"
+        }
+      ],
+      "providerTypeIds": [
+        "pt-nails"
       ]
     },
     {
       "id": "cat-lashes",
       "name": "Lashes & brows",
       "services": [
-        { "id": "svc-lash", "categoryId": "cat-lashes", "name": "Lash extensions" },
-        { "id": "svc-brow", "categoryId": "cat-lashes", "name": "Brow shaping" }
+        {
+          "id": "svc-lash",
+          "categoryId": "cat-lashes",
+          "name": "Lash extensions"
+        },
+        {
+          "id": "svc-brow",
+          "categoryId": "cat-lashes",
+          "name": "Brow shaping"
+        }
+      ],
+      "providerTypeIds": [
+        "pt-lashes"
+      ]
+    },
+    {
+      "id": "cat-makeup",
+      "name": "Makeup",
+      "providerTypeIds": [
+        "pt-makeup"
+      ],
+      "services": [
+        {
+          "id": "svc-day-makeup",
+          "categoryId": "cat-makeup",
+          "name": "Day makeup"
+        },
+        {
+          "id": "svc-evening-makeup",
+          "categoryId": "cat-makeup",
+          "name": "Evening makeup"
+        },
+        {
+          "id": "svc-bridal-makeup",
+          "categoryId": "cat-makeup",
+          "name": "Bridal makeup"
+        }
+      ]
+    },
+    {
+      "id": "cat-face",
+      "name": "Face care",
+      "providerTypeIds": [
+        "pt-cosmo"
+      ],
+      "services": [
+        {
+          "id": "svc-facial-cleansing",
+          "categoryId": "cat-face",
+          "name": "Facial cleansing"
+        },
+        {
+          "id": "svc-peeling",
+          "categoryId": "cat-face",
+          "name": "Chemical peeling"
+        },
+        {
+          "id": "svc-face-massage",
+          "categoryId": "cat-face",
+          "name": "Face massage"
+        }
       ]
     }
   ]

@@ -24,7 +24,7 @@ export default function PickServicesScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const d = useRegisterStore();
-  const catalog = useServiceCategories();
+  const catalog = useServiceCategories(d.providerTypeId);
   const save = useSetMyServices();
   const [query, setQuery] = useState('');
   const [open, setOpen] = useState<Record<string, boolean>>({});
@@ -230,12 +230,16 @@ export default function PickServicesScreen() {
                           >
                             <Text
                               weight={700}
-                              className="text-[13px]"
+                              className="flex-1 text-[13px] leading-[17px]"
+                              numberOfLines={2}
                               style={{ color: miss ? colors.status.cancelled.fg : colors.muted }}
                             >
                               {miss ? t('auth.services.howLong') : t('auth.services.stepHint')}
                             </Text>
-                            <View className="flex-row items-center" style={{ gap: 4 }}>
+                            <View
+                              className="flex-row items-center"
+                              style={{ gap: 4, flexShrink: 0 }}
+                            >
                               <Pressable
                                 accessibilityRole="button"
                                 accessibilityLabel={t('auth.services.fewer', { name: s.name })}

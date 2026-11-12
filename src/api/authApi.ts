@@ -26,6 +26,11 @@ export const authApi = {
     const { data } = await apiV1.get<User>('/auth/me');
     return data;
   },
+  /**
+   * Creates an unconfirmed draft account and returns its id. A confirmed account with the
+   * same email → 422 on `email`. Unconfirmed duplicates are allowed; the first one to pass
+   * email verification becomes the account, the other drafts are discarded by the backend.
+   */
   register: async (input: RegisterInput) => {
     const { data } = await apiV1.post<RegisterResponse>('/auth/register', input);
     return data;
