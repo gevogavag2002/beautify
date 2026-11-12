@@ -73,3 +73,12 @@ Run `pnpm typecheck` before saying a change is done.
 - **Never commit or push without the user's explicit permission in the current conversation.**
   Finish the work, run `pnpm typecheck`, report what changed, and wait. Permission for one
   commit does not carry over to the next one.
+
+## Troubleshooting
+
+- **className styles stop applying (NativeWind)**: pnpm may keep two copies of
+  `react-native-css-interop` after dependency changes; styles get registered in one copy and
+  read from the other. Check `ls node_modules/.pnpm | grep css-interop` (must be one line), run
+  `pnpm dedupe && pnpm prune`, kill the old Metro by the PID on port 8081
+  (`ss -ltnp | grep 8081`), then `pnpm start --clear`.
+- Metro is started by `node .../expo/bin/cli start`; `pkill -f "expo start"` does not match it.

@@ -13,3 +13,17 @@
 - Screens: ground background `#F4F2FF`, cards on `sheet` white, primary violet header with a
   28px rounded sheet overlapping it (see design canvas).
 - Dark mode via `dark:` classes and `themeStore`; every new screen must look right in both.
+
+## Screens with inputs
+
+- Any screen with a TextInput is built on `src/components/common/FormScreen.tsx`
+  (`header` = violet band that scrolls with the sheet, optional sticky `footer`). It handles the
+  keyboard on both platforms, scroll when content no longer fits, and safe areas. No custom keyboard-dismiss behavior (platform default only).
+  Never hand-roll KeyboardAvoidingView + ScrollView in a screen.
+- Text and TextInput cap font scaling at 1.3x (`maxFontSizeMultiplier`) so system font sizes
+  do not break layouts; keep that when adding new text primitives.
+- In rows that mix text and controls, give the text `flex-1` + `numberOfLines` and the control
+  `flexShrink: 0`. Long names, long emails and 2-line hints must never push controls off screen.
+- Every list from the backend has three states: loading (`ActivityIndicator`), error with
+  Retry, empty. Every form validates client-side before submit and shows 422 errors under the
+  matching field (`fieldErrors` in `src/features/auth/hooks/useAuth.ts`).

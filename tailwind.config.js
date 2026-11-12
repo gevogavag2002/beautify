@@ -1,4 +1,4 @@
-const { colors, radius, fontFamily } = require('./src/theme/tokens');
+const { colors, radius } = require('./src/theme/tokens');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -9,7 +9,6 @@ module.exports = {
     extend: {
       colors,
       borderRadius: radius,
-      fontFamily,
     },
   },
   plugins: [],

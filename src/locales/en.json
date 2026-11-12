@@ -1,0 +1,112 @@
+{
+  "common": {
+    "back": "Back",
+    "continue": "Continue",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "passwordsMatch": "Passwords match",
+    "passwordHint": "At least 8 characters, with a letter and a number.",
+    "loadError": "Couldn't load.",
+    "retry": "Retry",
+    "checkForm": "Check the highlighted fields."
+  },
+  "auth": {
+    "login": {
+      "tagline": "Book beauty pros near you.",
+      "title": "Sign in",
+      "subtitle": "Welcome back. Use the email and password you registered with.",
+      "email": "Email",
+      "password": "Password",
+      "forgot": "Forgot password?",
+      "cta": "Sign in",
+      "newHere": "New to Beautify?",
+      "create": "Create an account",
+      "terms": "By continuing you agree to the <terms>Terms</terms> and <privacy>Privacy Policy</privacy>.",
+      "wrongCredentials": "Wrong email or password"
+    },
+    "register": {
+      "headerTitle": "Create account",
+      "headerTitleWithType": "Create account · {{type}}",
+      "step": "Step {{current}} of {{total}}",
+      "lastStep": "Step {{current}} of {{total}} · last step",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in"
+    },
+    "role": {
+      "title": "What are you joining as?",
+      "client": "Client",
+      "clientBody": "I want to book",
+      "provider": "Service provider",
+      "providerBody": "I take bookings",
+      "typeTitle": "What kind of provider are you?",
+      "typeSubtitle": "Pick one. Clients will find you under this type.",
+      "clientNote": "Next: your details and a code by SMS. Then you can start booking.",
+      "continueProvider": "Continue as provider",
+      "continueClient": "Continue as client",
+      "pickType": "Pick your provider type"
+    },
+    "details": {
+      "title": "About you",
+      "photo": "Main photo",
+      "optional": "optional",
+      "photoHint": "Shown on your card and profile.",
+      "addPhoto": "Add photo",
+      "changePhoto": "Change",
+      "fullName": "Full name",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "phone": "Phone number",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "errors": {
+        "name": "Enter your full name",
+        "phone": "Enter a valid phone number",
+        "email": "Enter a valid email",
+        "confirm": "Passwords don't match"
+      }
+    },
+    "phone": {
+      "title": "Confirm your phone",
+      "sent": "We sent a 6-digit code by SMS to",
+      "resendIn": "Resend in {{time}}",
+      "resend": "Resend code",
+      "change": "Change number",
+      "note": "The code expires in 5 minutes. After 5 wrong tries you'll need a new one. Next, we'll confirm your email.",
+      "cta": "Confirm phone",
+      "wrongCode": "Wrong code, try again"
+    },
+    "email": {
+      "phoneConfirmed": "Phone confirmed",
+      "title": "Confirm your email",
+      "sent": "We emailed a 6-digit code to",
+      "change": "Change email",
+      "openMail": "Open email app",
+      "note": "Can't find it? Check your spam folder. The code expires in 15 minutes.",
+      "cta": "Confirm email"
+    },
+    "services": {
+      "title": "What do you offer?",
+      "intro": "Tick each service you do and set how many minutes it takes. You can change this later.",
+      "search": "Search services",
+      "picked": "{{count}} picked",
+      "howLong": "How long does it take?",
+      "stepHint": "Minutes, in steps of 5",
+      "min": "{{count}} min",
+      "noMin": "— min",
+      "fewer": "Fewer minutes for {{name}}",
+      "more": "More minutes for {{name}}",
+      "none": "No services picked yet",
+      "summary_one": "{{count}} service picked",
+      "summary_other": "{{count}} services picked",
+      "allSet": "all set",
+      "withoutMinutes": "{{count}} without minutes",
+      "pickOne": "Pick at least one service",
+      "setMinutesFor": "Set minutes for {{name}}",
+      "setMinutesCount": "Set minutes for {{count}} services",
+      "cta": "Finish and open my schedule",
+      "noResults": "Nothing matches your search"
+    }
+  }
+}
