@@ -2,6 +2,8 @@ import type { PropsWithChildren, ReactNode } from 'react';
 import { KeyboardAvoidingView, ScrollView, View, type ViewStyle } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import StatusBarBand from './StatusBarBand';
+
 type Props = PropsWithChildren<{
   /** Content above the sheet (violet header). Scrolls together with the sheet. */
   header?: ReactNode;
@@ -55,6 +57,7 @@ export default function FormScreen({
           {children}
         </View>
       </ScrollView>
+      {header ? <StatusBarBand /> : null}
       {footer && <View style={{ paddingBottom: insets.bottom }}>{footer}</View>}
     </KeyboardAvoidingView>
   );

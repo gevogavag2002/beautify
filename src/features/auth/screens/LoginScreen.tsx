@@ -8,7 +8,8 @@ import FormScreen from '@/components/common/FormScreen';
 import { Button, Icon, Input, Text } from '@/components/ui';
 import { colors } from '@/theme';
 
-import { errorMessage, useLogin } from '../hooks/useAuth';
+import { useLogin } from '../hooks/useAuth';
+import { errorMessage } from '@/utils/apiError';
 
 export default function LoginScreen() {
   const { t } = useTranslation();
@@ -23,7 +24,9 @@ export default function LoginScreen() {
       { email: email.trim(), password },
       {
         onSuccess: (r) =>
-          router.replace(r.user.role === 'provider' ? '/(provider)/schedule' : '/(client)'),
+          router.replace(
+            r.user.role === 'provider' ? '/(provider)/(tabs)/schedule' : '/(client)/(tabs)',
+          ),
       },
     );
 

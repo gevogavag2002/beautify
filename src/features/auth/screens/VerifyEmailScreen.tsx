@@ -8,11 +8,12 @@ import FormScreen from '@/components/common/FormScreen';
 import { Button, Icon, Text } from '@/components/ui';
 import { colors } from '@/theme';
 
-import InfoNote from '../components/InfoNote';
-import OtpInput from '../components/OtpInput';
+import InfoNote from '@/components/common/InfoNote';
+import OtpInput from '@/components/common/OtpInput';
 import RegisterHeader from '../components/RegisterHeader';
-import { useCountdown } from '../components/useCountdown';
-import { errorMessage, useResend, useVerifyEmail } from '../hooks/useAuth';
+import { useCountdown } from '@/hooks/useCountdown';
+import { useResend, useVerifyEmail } from '../hooks/useAuth';
+import { errorMessage } from '@/utils/apiError';
 import { totalSteps, useRegisterStore } from '../store';
 
 export default function VerifyEmailScreen() {
@@ -39,7 +40,7 @@ export default function VerifyEmailScreen() {
           if (d.role === 'provider') router.push('/(auth)/register/services');
           else {
             d.reset();
-            router.replace('/(client)');
+            router.replace('/(client)/(tabs)');
           }
         },
       },

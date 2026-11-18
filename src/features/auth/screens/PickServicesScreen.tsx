@@ -1,13 +1,6 @@
 import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
-import {
-  ActivityIndicator,
-  KeyboardAvoidingView,
-  Pressable,
-  ScrollView,
-  TextInput,
-  View,
-} from 'react-native';
+import { KeyboardAvoidingView, Pressable, ScrollView, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 
@@ -16,7 +9,7 @@ import { colors } from '@/theme';
 
 import RegisterHeader from '../components/RegisterHeader';
 import { useSetMyServices } from '../hooks/useAuth';
-import { useServiceCategories } from '../hooks/useCatalog';
+import { useServiceCategories } from '@/hooks/useCatalog';
 import { totalSteps, useRegisterStore } from '../store';
 
 export default function PickServicesScreen() {
@@ -61,7 +54,7 @@ export default function PickServicesScreen() {
       {
         onSuccess: () => {
           d.reset();
-          router.replace('/(provider)/schedule');
+          router.replace('/(provider)/(tabs)/schedule');
         },
       },
     );

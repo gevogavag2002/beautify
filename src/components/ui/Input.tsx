@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { Pressable, TextInput, View, type TextInputProps } from 'react-native';
+import { Pressable, View, type TextInputProps } from 'react-native';
+
+import { useSheetInput } from './sheetContext';
 import { useTranslation } from 'react-i18next';
 
 import { colors } from '@/theme';
@@ -37,6 +39,8 @@ export default function Input({
   const { t } = useTranslation();
   const [show, setShow] = useState(false);
   const [focused, setFocused] = useState(false);
+  // Stable component from context (TextInput or BottomSheetTextInput), not created here.
+  const Field = useSheetInput();
   const radius = height === 54 ? 16 : 14;
   const border = focused
     ? colors.primary.DEFAULT
@@ -60,12 +64,23 @@ export default function Input({
           {labelRight}
         </View>
       )}
-      <View
-        style={[
-          { borderRadius: radius + 4, padding: 4, margin: -4 },
-          focused && { backgroundColor: colors.primary.soft },
-        ]}
-      >
+      <View style={{ padding: 4, margin: -4 }}>
+        {/* Halo is mounted with its radius and colour together: on Android a background
+            added to an existing view later is drawn without the radius. */}
+        {focused && (
+          <View
+            pointerEvents="none"
+            style={{
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              bottom: 0,
+              left: 0,
+              borderRadius: radius + 4,
+              backgroundColor: colors.primary.soft,
+            }}
+          />
+        )}
         <View
           style={{
             height,
@@ -75,7 +90,8 @@ export default function Input({
             backgroundColor: bg,
           }}
         >
-          <TextInput
+          {/* eslint-disable-next-line react-hooks/static-components -- stable component from context */}
+          <Field
             maxFontSizeMultiplier={1.3}
             placeholderTextColor={colors.muted}
             secureTextEntry={secure && !show}

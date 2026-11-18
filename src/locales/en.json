@@ -8,7 +8,13 @@
     "passwordHint": "At least 8 characters, with a letter and a number.",
     "loadError": "Couldn't load.",
     "retry": "Retry",
-    "checkForm": "Check the highlighted fields."
+    "checkForm": "Check the highlighted fields.",
+    "close": "Close",
+    "save": "Save changes",
+    "km": "{{value}} km",
+    "min": "{{value}} min",
+    "today": "Today",
+    "tomorrow": "Tomorrow"
   },
   "auth": {
     "login": {
@@ -108,5 +114,470 @@
       "cta": "Finish and open my schedule",
       "noResults": "Nothing matches your search"
     }
+  },
+  "tabs": {
+    "home": "Home",
+    "map": "Map",
+    "reservations": "Reservations",
+    "profile": "Profile",
+    "schedule": "Schedule",
+    "services": "Services",
+    "portfolio": "Portfolio"
+  },
+  "profile": {
+    "title": "Profile",
+    "changePhoto": "Change photo",
+    "joined": "{{role}} · joined {{date}}",
+    "roleClient": "Client",
+    "stats": {
+      "rating": "Your rating",
+      "visits": "Visits",
+      "noShows": "No-shows"
+    },
+    "personal": "Personal details",
+    "account": "Account",
+    "help": "Help",
+    "fullName": "Full name",
+    "gender": "Gender",
+    "phone": "Phone",
+    "email": "Email",
+    "confirmed": "Confirmed",
+    "changePassword": "Change password",
+    "lastChanged": "Last changed in {{month}}",
+    "neverChanged": "Never changed",
+    "myRatings": "My ratings",
+    "ratingsSummary": "{{received}} received · {{given}} given",
+    "faq": "Questions & answers",
+    "privacy": "Privacy policy",
+    "signOut": "Sign out",
+    "sheet": {
+      "details": {
+        "title": "Edit details",
+        "cta": "Save changes",
+        "toast": "Details saved",
+        "titleProvider": "Your details",
+        "nameHintProvider": "Only you and Beautify see this. Clients see your business name."
+      },
+      "phone": {
+        "title": "Change phone number",
+        "current": "Current number",
+        "label": "New phone number",
+        "note": "We'll text a 6-digit code to the new number. Your current number stays on your account until you enter it.",
+        "cta": "Send code",
+        "toast": "Code sent to the new number",
+        "done": "Phone number updated",
+        "labelProvider": "New phone number, with country code",
+        "noteProvider": "We'll text a 6-digit code to the new number. Booking texts keep going to your current number until you enter it."
+      },
+      "email": {
+        "title": "Change email",
+        "current": "Current email",
+        "label": "New email",
+        "note": "We'll email a 6-digit code to the new address. You'll sign in with it once it's confirmed.",
+        "cta": "Send code",
+        "toast": "Code sent to the new email",
+        "done": "Email updated"
+      },
+      "code": {
+        "title": "Enter the code",
+        "sentTo": "We sent a 6-digit code to",
+        "cta": "Confirm"
+      },
+      "password": {
+        "title": "Change password",
+        "current": "Current password",
+        "new": "New password",
+        "confirm": "Confirm new password",
+        "note": "You stay signed in on this phone. Your other devices are signed out.",
+        "cta": "Update password",
+        "toast": "Password updated"
+      },
+      "signout": {
+        "title": "Sign out of Beautify?",
+        "text": "You can sign back in any time with your email and password. Your reservations stay as they are.",
+        "cta": "Sign out",
+        "stay": "Stay signed in",
+        "textProvider": "Your schedule keeps running while you're signed out. New requests wait for you, or confirm themselves if auto-accept is on."
+      },
+      "business": {
+        "title": "Business details",
+        "name": "Business name",
+        "about": "About",
+        "optional": "optional",
+        "aboutHint": "Shown on your public page, above your services.",
+        "cta": "Save changes",
+        "toast": "Business details saved"
+      },
+      "type": {
+        "title": "Provider type",
+        "note": "Clients find you under this type. Your services stay as they are.",
+        "cta": "Save type",
+        "toast": "Provider type saved"
+      },
+      "address": {
+        "title": "Address and map pin",
+        "label": "Address",
+        "note": "Clients see this pin on the map and measure distance from it. Drag the map until the pin sits on your door.",
+        "cta": "Save address",
+        "toast": "Address saved"
+      },
+      "language": {
+        "title": "App language",
+        "note": "Service names and help texts come from the server in the language you pick."
+      }
+    },
+    "errors": {
+      "sameValue": "That is your current value",
+      "currentPassword": "Enter your current password",
+      "businessName": "Enter your business name",
+      "address": "Enter your address",
+      "aboutTooLong": "Keep it under {{max}} characters"
+    },
+    "publicPage": "Public page",
+    "shownInSearch": "Shown in search",
+    "notListed": "Not shown in search yet",
+    "typeAndDistrict": "{{type}} · {{district}}",
+    "statsProvider": {
+      "rating": "Rating",
+      "visits": "Visits",
+      "photos": "Photos"
+    },
+    "business": "Business",
+    "yourDetails": "Your details",
+    "businessName": "Business name",
+    "providerType": "Provider type",
+    "addressPin": "Address and map pin",
+    "about": "About",
+    "workingHours": "Working hours",
+    "password": "Password",
+    "ratings": "Ratings",
+    "ratingsDetailProvider": "{{received}} received · {{given}} given",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Find your next look",
+    "profile": "Your profile",
+    "searchLabel": "Search providers or services",
+    "searchPlaceholder": "Haircut, nails, lashes…",
+    "filters": "Filters",
+    "types": "Browse by type",
+    "events": "Happening soon",
+    "seeAll": "See all",
+    "eventsSoon": "Events are coming soon",
+    "top": "Top rated near you",
+    "topEmpty": "No providers near you yet",
+    "defaultLocation": "Kentron, Yerevan"
+  },
+  "search": {
+    "title": "{{what}} near you",
+    "providersTitle": "Providers",
+    "providers": "providers",
+    "provider": "provider",
+    "allTypes": "All types",
+    "allShort": "All",
+    "typeSheet": "Provider type",
+    "sort": {
+      "distance": "Nearest",
+      "rating": "Top rated",
+      "visits": "Most visits"
+    },
+    "summary": "{{count}} {{noun}} within {{radius}} km",
+    "summaryQuery": "{{count}} {{noun}} for “{{q}}” within {{radius}} km",
+    "clear": "Clear search",
+    "visits_one": "{{count}} visit",
+    "visits_other": "{{count}} visits",
+    "openTill": "open till {{time}}",
+    "closedToday": "closed today",
+    "emptyTitle": "No {{what}} this close yet",
+    "emptyBody": "Try a wider radius.",
+    "emptyBodyMax": "Try another type or search."
+  },
+  "provider": {
+    "share": "Share",
+    "openToday": "Open today {{open}} – {{close}}",
+    "closedToday": "Closed today",
+    "stats": {
+      "rating": "Rating",
+      "visits": "Visits",
+      "distance": "Distance"
+    },
+    "tabs": {
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "ratings": "Ratings"
+    },
+    "recentWork": "Recent work",
+    "seeAll": "See all {{count}}",
+    "servicesEmpty": "No services yet",
+    "servicesEmptyBody": "This provider has not listed any services.",
+    "portfolioEmpty": "No photos yet",
+    "portfolioEmptyBody": "This provider has not added any work.",
+    "ratingsCount_one": "{{count}} rating",
+    "ratingsCount_other": "{{count}} ratings",
+    "ratingsEmpty": "No ratings yet",
+    "ratingsEmptyBody": "Ratings appear after completed visits.",
+    "nextFree": "Next free time",
+    "noFreeTime": "Nothing this week",
+    "reserve": "Reserve",
+    "previewNote": "This is how clients see your page.",
+    "previewUnlisted": "Clients cannot find you yet: add an address and at least one service."
+  },
+  "booking": {
+    "title": "Reserve a time",
+    "services": "Services",
+    "total": "Total {{min}} min",
+    "noServices": "No services yet",
+    "day": "Day",
+    "closed": "closed",
+    "startTimes_one": "{{count}} start time",
+    "startTimes_other": "{{count}} start times",
+    "startTime": "Start time",
+    "freeCount": "{{count}} free · every 15 min",
+    "empty": {
+      "fullTitle": "Fully booked",
+      "fullBody": "No {{min}}-minute gap left this day. Try another day.",
+      "noServiceTitle": "Pick a service first",
+      "noServiceBody": "Start times depend on how long your visit takes.",
+      "closedTitle": "Closed on {{day}}s",
+      "closedBody": "Choose another day this week.",
+      "errorBody": "Start times did not load."
+    },
+    "visit": "{{min}} min visit",
+    "nothing": "Nothing selected",
+    "payAtVisit": "pay at the visit",
+    "chooseService": "Choose at least one service",
+    "reserveNow": "Reserve now",
+    "sendRequest": "Send request",
+    "pickTime": "Pick a start time",
+    "failed": "Couldn't reserve. Try again.",
+    "done": {
+      "title": "Request sent",
+      "titleAuto": "You’re booked",
+      "body": "Your time is held while {{name}} reviews it. We’ll text you when they accept.",
+      "bodyAuto": "{{name}} confirms bookings instantly. See you there.",
+      "seeReservations": "See my reservations",
+      "changeTime": "Change time"
+    }
+  },
+  "reservations": {
+    "title": "Reservations",
+    "upcoming": "Upcoming",
+    "upcomingCount": "Upcoming · {{count}}",
+    "past": "Past",
+    "status": {
+      "pending": "Waiting for provider",
+      "confirmed": "Confirmed",
+      "completed": "Completed",
+      "declined": "Declined",
+      "cancelled": "Cancelled",
+      "no_show": "No-show"
+    },
+    "directions": "Directions",
+    "cancel": "Cancel",
+    "youRated": "You rated {{stars}} of 5",
+    "waitingRating": "Waiting for your rating",
+    "howWas": "How was {{name}}?",
+    "stars_one": "{{count}} star",
+    "stars_other": "{{count}} stars",
+    "rated": "Thanks for your rating",
+    "rateFailed": "Couldn't save the rating.",
+    "cancelled": "Reservation cancelled",
+    "cancelFailed": "Couldn't cancel. Try again.",
+    "emptyUpcoming": "No upcoming reservations",
+    "emptyUpcomingBody": "Find a provider and reserve your first visit.",
+    "find": "Find a provider",
+    "emptyPast": "No past visits yet",
+    "emptyPastBody": "Your finished and cancelled reservations will show up here.",
+    "cancelSheet": {
+      "title": "Cancel this reservation?",
+      "text": "{{name}}, {{when}}. The provider will be told and the time becomes free for others.",
+      "cta": "Cancel reservation",
+      "keep": "Keep it"
+    }
+  },
+  "schedule": {
+    "title": "Schedule",
+    "visits_one": "visit",
+    "visits_other": "visits",
+    "requests_one": "request",
+    "requests_other": "requests",
+    "closed": "Closed",
+    "breakAt": "break {{time}}",
+    "noBreak": "no break",
+    "walkInButton": "Walk-in",
+    "walkInName": "{{name}} · walk-in",
+    "closedBody": "Change this in Working hours.",
+    "quietTitle": "No reservations yet",
+    "quietBody": "Your whole day is open for clients.",
+    "break": "Break",
+    "chip": {
+      "request": "Request",
+      "done": "Done",
+      "noShow": "No-show",
+      "walkIn": "Walk-in",
+      "confirmed": "Confirmed"
+    },
+    "decline": "Decline",
+    "accept": "Accept",
+    "noShow": "No-show",
+    "markDone": "Mark done",
+    "failed": "Couldn't update. Try again.",
+    "toast": {
+      "confirmed": "Accepted {{name}}",
+      "declined": "Declined {{name}}",
+      "completed": "Marked done",
+      "no_show": "Marked as no-show"
+    },
+    "walkIn": {
+      "title": "Add a walk-in",
+      "name": "Client name",
+      "namePlaceholder": "e.g. Gor",
+      "nameRequired": "Enter the client name",
+      "services": "Services",
+      "serviceRequired": "Pick at least one service",
+      "noServices": "Add a service first in Services.",
+      "time": "Start time",
+      "timeRequired": "Pick a start time",
+      "cta": "Add walk-in",
+      "toast": "Walk-in added"
+    }
+  },
+  "days": {
+    "mon": "Mon",
+    "tue": "Tue",
+    "wed": "Wed",
+    "thu": "Thu",
+    "fri": "Fri",
+    "sat": "Sat",
+    "sun": "Sun"
+  },
+  "daysLong": {
+    "mon": "Monday",
+    "tue": "Tuesday",
+    "wed": "Wednesday",
+    "thu": "Thursday",
+    "fri": "Friday",
+    "sat": "Saturday",
+    "sun": "Sunday"
+  },
+  "services": {
+    "title": "Services & settings",
+    "auto": "Auto-accept",
+    "autoOff": "Off — you approve each new request",
+    "autoOn": "On — new requests are confirmed instantly",
+    "autoOnToast": "Auto-accept is on",
+    "autoOffToast": "Auto-accept is off",
+    "yours": "Your services",
+    "active": "{{count}} active",
+    "hidden": "Hidden from clients",
+    "edit": "Edit {{name}}",
+    "addButton": "Add a service",
+    "sheet": {
+      "duration": "Duration",
+      "shorter": "Shorter",
+      "longer": "Longer",
+      "description": "Short description",
+      "descriptionPlaceholder": "e.g. Scissors or clipper, styled finish",
+      "hide": "Hide from clients",
+      "hideHint": "Stays in your list, cannot be booked.",
+      "saved": "Service saved",
+      "remove": "Remove service",
+      "removeConfirm": "Yes, remove it",
+      "removed": "{{name}} removed"
+    },
+    "add": {
+      "title": "Add a service",
+      "pick": "Pick a service",
+      "none": "Every service for your provider type is already in your list.",
+      "cta": "Add service",
+      "toast": "Service added"
+    },
+    "hours": {
+      "title": "Working hours",
+      "break": "Break {{start}} – {{end}}",
+      "dayClosed": "{{day}} closed",
+      "dayTo": "{{day}} to {{close}}",
+      "openDays_one": "Open {{count}} day a week",
+      "openDays_other": "Open {{count}} days a week",
+      "varies": "Hours differ by day",
+      "openDay": "Open on {{day}}",
+      "opens": "Opens",
+      "closes": "Closes",
+      "hasBreak": "Break",
+      "breakStarts": "Break starts",
+      "breakEnds": "Break ends",
+      "earlier": "Earlier",
+      "later": "Later",
+      "applyAll": "Use these hours for every open day",
+      "toast": "Working hours saved"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "summary_one": "{{count}} photo · clients see the first {{visible}}",
+    "summary_other": "{{count}} photos · clients see the first {{visible}}",
+    "reorder": "Reorder",
+    "done": "Done",
+    "reorderHint": "Tap a photo, then tap the place it should move to. The first photo is the cover.",
+    "reorderHintPlace": "Now tap the place this photo should move to.",
+    "reordered": "Order saved",
+    "add": "Add photos of your work",
+    "addHint": "Camera or gallery · JPG, PNG, HEIC up to 10 MB",
+    "added": "Photo added",
+    "processing": "Processing…",
+    "photo": "Photo {{n}}",
+    "cover": "Cover",
+    "delete": "Delete photo {{n}}",
+    "deleted": "Photo deleted",
+    "emptyTitle": "No photos yet",
+    "emptyBody": "Clients choose with their eyes. Add your best work.",
+    "deleteSheet": {
+      "title": "Delete this photo?",
+      "text": "It disappears from your public page right away.",
+      "cta": "Delete photo",
+      "keep": "Keep it"
+    }
+  },
+  "errors": {
+    "retry": "Try again",
+    "goHome": "Go to home",
+    "findProviders": "Find providers nearby",
+    "otherAccount": "Sign in with another account",
+    "notFound": {
+      "title": "We can't find this",
+      "text": "This provider or booking may have been removed, or the link is old."
+    },
+    "forbidden": {
+      "title": "You can't open this",
+      "text": "This part of Beautify is for another type of account, for example providers only."
+    },
+    "failure": {
+      "title": "Something went wrong",
+      "text": "It's not you. We hit a problem on our side. Please try again in a moment."
+    }
+  },
+  "help": {
+    "faq": {
+      "title": "Questions & answers",
+      "subtitle": "How booking, confirmations and ratings work on Beautify.",
+      "searchLabel": "Search questions",
+      "searchPlaceholder": "Search, e.g. cancel a booking",
+      "forClients": "For clients",
+      "forProviders": "For providers",
+      "emptyTitle": "Nothing found",
+      "emptyBody": "Try other words.",
+      "contactTitle": "Still have a question?"
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "updated": "Last updated {{date}}",
+      "inShort": "In short",
+      "why": "Why we need it",
+      "who": "Who can see it"
+    }
+  },
+  "language": {
+    "en": "English",
+    "ru": "Русский"
   }
 }

@@ -1,0 +1,270 @@
+{
+  "faq": {
+    "client": [
+      {
+        "id": "c1",
+        "question": "Is Beautify free?",
+        "answer": "Yes. Beautify is free for clients and for providers. There are no payments in the app: you pay the provider in person at your visit."
+      },
+      {
+        "id": "c2",
+        "question": "How do I book a time?",
+        "answer": "Open a provider, pick one or more services, choose a day in the next 7 days and tap a free start time. The total length is the minutes of all the services you picked."
+      },
+      {
+        "id": "c3",
+        "question": "What does \"Pending\" mean?",
+        "answer": "Some providers review each request first. Your time is held for you while it is pending, and we let you know as soon as they accept or decline. Providers with instant booking confirm right away."
+      },
+      {
+        "id": "c4",
+        "question": "Why can't I see the time I want?",
+        "answer": "We only show start times where your whole visit fits: it must end before closing, avoid the provider's break and not overlap another booking. Try fewer services or another day."
+      },
+      {
+        "id": "c5",
+        "question": "Can I cancel a booking?",
+        "answer": "Yes. Open My reservations and cancel any upcoming booking before its start time. The time becomes free for other clients."
+      },
+      {
+        "id": "c6",
+        "question": "How do ratings work?",
+        "answer": "After a completed visit you rate the provider and the provider rates you, from 1 to 5 stars with an optional comment. A rating can't be changed once it is sent."
+      },
+      {
+        "id": "c7",
+        "question": "Why do I confirm my phone and my email?",
+        "answer": "It keeps bookings real and lets us reach you. We send a 6-digit code by SMS and another by email when you register."
+      },
+      {
+        "id": "c8",
+        "question": "I forgot my password. What now?",
+        "answer": "Tap \"Forgot password?\" on the sign-in page and enter your email. We'll email you a way to set a new password."
+      }
+    ],
+    "provider": [
+      {
+        "id": "p1",
+        "question": "How do I join as a provider?",
+        "answer": "Choose \"Service provider\" when you register, pick your type, fill in your details, confirm your phone and email, then pick the services you offer and how many minutes each takes."
+      },
+      {
+        "id": "p2",
+        "question": "Does it cost anything?",
+        "answer": "No. Joining and taking bookings is free, and Beautify takes no fee. Clients pay you directly at the visit."
+      },
+      {
+        "id": "p3",
+        "question": "What is auto-accept?",
+        "answer": "With auto-accept on, new bookings are confirmed instantly. With it off, each booking arrives as a request you accept or decline. You can switch it any time in Services."
+      },
+      {
+        "id": "p4",
+        "question": "Can I add clients who walk in or call?",
+        "answer": "Yes. Add a manual booking with the client's name and, if you like, their phone. It takes a free time in your schedule like any other booking."
+      },
+      {
+        "id": "p5",
+        "question": "How do I set my hours and break?",
+        "answer": "Set an opening and closing time for each weekday, plus a break if you take one. Days without hours are shown as closed."
+      },
+      {
+        "id": "p6",
+        "question": "What if a client doesn't come?",
+        "answer": "After the start time, mark the booking as No-show. Completed visits count towards your profile; no-shows don't."
+      },
+      {
+        "id": "p7",
+        "question": "When do I appear in search?",
+        "answer": "Once your business name, address on the map, working hours and at least one service are set."
+      }
+    ],
+    "supportEmail": null
+  },
+  "privacy": {
+    "updatedAt": null,
+    "summary": [
+      "We collect what we need to run bookings: your account details, bookings, ratings and, for providers, their public profile.",
+      "We never ask for card or bank details. Beautify has no payments.",
+      "We don't sell your data.",
+      "You can see, correct or delete your data at any time."
+    ],
+    "sections": [
+      {
+        "id": "who",
+        "title": "1. Who we are",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Beautify is run by [COMPANY LEGAL NAME], [REGISTERED ADDRESS]. We decide how your personal data is used on the Beautify website and apps."
+          }
+        ],
+        "table": false
+      },
+      {
+        "id": "collect",
+        "title": "2. What we collect",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "We only collect data you give us or that comes from using Beautify."
+          }
+        ],
+        "table": true
+      },
+      {
+        "id": "use",
+        "title": "3. How we use it",
+        "blocks": [
+          {
+            "type": "bullet",
+            "text": "To create your account and confirm your phone number (SMS code) and email address (email code)."
+          },
+          {
+            "type": "bullet",
+            "text": "To show providers near you and the free times you can book."
+          },
+          {
+            "type": "bullet",
+            "text": "To send booking requests, confirmations and cancellations by SMS, email or push notification."
+          },
+          {
+            "type": "bullet",
+            "text": "To show ratings and keep Beautify safe, for example by blocking abusive accounts or removing abusive comments."
+          }
+        ],
+        "table": false
+      },
+      {
+        "id": "share",
+        "title": "4. Who can see it",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "When you book, the provider sees your name, the services and the time, and [PHONE NUMBER: YES/NO]. Provider profiles, portfolios and rating comments are public."
+          },
+          {
+            "type": "text",
+            "text": "These services help us run Beautify and only process data for us: [SMS PROVIDER], [EMAIL PROVIDER], [HOSTING PROVIDER], [PUSH NOTIFICATION PROVIDER]."
+          }
+        ],
+        "table": false
+      },
+      {
+        "id": "keep",
+        "title": "5. How long we keep it",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "We keep your account data while your account is open. Bookings and ratings are kept for [RETENTION PERIOD]. When you delete your account, we delete or anonymise your data within [DELETION PERIOD]."
+          }
+        ],
+        "table": false
+      },
+      {
+        "id": "rights",
+        "title": "6. Your rights",
+        "blocks": [
+          {
+            "type": "bullet",
+            "text": "See the data we hold about you."
+          },
+          {
+            "type": "bullet",
+            "text": "Correct your name, gender, email, phone or photo in Profile."
+          },
+          {
+            "type": "bullet",
+            "text": "Delete your account and data."
+          },
+          {
+            "type": "bullet",
+            "text": "Object to how we use your data, or complain to [DATA PROTECTION AUTHORITY]."
+          },
+          {
+            "type": "text",
+            "text": "To use these rights, write to [PRIVACY EMAIL]."
+          }
+        ],
+        "table": false
+      },
+      {
+        "id": "security",
+        "title": "7. Security",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Passwords and confirmation codes are stored only as secure hashes. Sign-in attempts and code requests are limited to stop guessing."
+          }
+        ],
+        "table": false
+      },
+      {
+        "id": "changes",
+        "title": "8. Changes",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "If we change this policy, we update the date at the top and tell you in the app before the change applies."
+          }
+        ],
+        "table": false
+      },
+      {
+        "id": "contact",
+        "title": "9. Contact us",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Questions about your privacy: [PRIVACY EMAIL] · [COMPANY LEGAL NAME], [REGISTERED ADDRESS]."
+          }
+        ],
+        "table": false
+      }
+    ],
+    "dataTable": [
+      {
+        "data": "Account",
+        "what": "Full name, gender, email, phone number, password (stored only as a secure hash)",
+        "why": "Create your account, sign you in, confirm it is really you",
+        "who": "You and our team"
+      },
+      {
+        "data": "Main photo",
+        "what": "The photo you upload (optional)",
+        "why": "Show it on your card and profile",
+        "who": "Anyone who views your profile"
+      },
+      {
+        "data": "Provider profile",
+        "what": "Business name, type, address and map pin, working hours, services and minutes, portfolio photos",
+        "why": "Show you in search and on your public page",
+        "who": "Everyone"
+      },
+      {
+        "data": "Location",
+        "what": "Your device location while you search",
+        "why": "Show providers near you",
+        "who": "No one · [STORED: YES/NO]"
+      },
+      {
+        "data": "Bookings",
+        "what": "Services, date, time, status, cancellations",
+        "why": "Run bookings between clients and providers",
+        "who": "You and the other side of the booking"
+      },
+      {
+        "data": "Ratings",
+        "what": "Stars and comments you give and receive",
+        "why": "Show ratings on profiles and sort search results",
+        "who": "Everyone"
+      },
+      {
+        "data": "Device",
+        "what": "Push notification token, device type",
+        "why": "Send booking notifications",
+        "who": "Only our systems"
+      }
+    ]
+  }
+}

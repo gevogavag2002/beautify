@@ -1,0 +1,72 @@
+[
+  {
+    "id": "rt-1",
+    "providerId": "prv-fade-room",
+    "clientName": "Ani K.",
+    "stars": 5,
+    "day": -2
+  },
+  {
+    "id": "rt-2",
+    "providerId": "prv-fade-room",
+    "clientName": "Davit M.",
+    "stars": 5,
+    "day": -6
+  },
+  {
+    "id": "rt-3",
+    "providerId": "prv-fade-room",
+    "clientName": "Levon A.",
+    "stars": 4,
+    "day": -10
+  },
+  {
+    "id": "rt-4",
+    "providerId": "prv-fade-room",
+    "clientName": "Mariam S.",
+    "stars": 5,
+    "day": -14
+  },
+  {
+    "id": "rt-5",
+    "providerId": "prv-fade-room",
+    "clientName": "Narek P.",
+    "stars": 5,
+    "day": -18
+  },
+  {
+    "id": "rt-6",
+    "providerId": "prv-fade-room",
+    "clientName": "Gor H.",
+    "stars": 3,
+    "day": -22
+  },
+  {
+    "id": "rt-7",
+    "providerId": "prv-fade-room",
+    "clientName": "Lilit V.",
+    "stars": 5,
+    "day": -26
+  },
+  {
+    "id": "rt-8",
+    "providerId": "prv-fade-room",
+    "clientName": "Tigran B.",
+    "stars": 4,
+    "day": -30
+  },
+  {
+    "id": "rt-20",
+    "providerId": "prv-nailed-it",
+    "clientName": "Sona M.",
+    "stars": 5,
+    "day": -3
+  },
+  {
+    "id": "rt-21",
+    "providerId": "prv-nailed-it",
+    "clientName": "Ani K.",
+    "stars": 4,
+    "day": -12
+  }
+]

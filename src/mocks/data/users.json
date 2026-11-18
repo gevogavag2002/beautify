@@ -10,7 +10,15 @@
     "emailConfirmed": true,
     "photoUrl": null,
     "createdAt": "2026-03-10T10:00:00Z",
-    "password": "sunny-days-7"
+    "password": "sunny-days-7",
+    "passwordChangedAt": "2026-09-14T09:00:00Z",
+    "clientStats": {
+      "rating": 4.8,
+      "ratingCount": 11,
+      "ratingsGiven": 9,
+      "visits": 12,
+      "noShows": 0
+    }
   },
   {
     "id": "usr-provider-1",
@@ -24,6 +32,7 @@
     "photoUrl": null,
     "createdAt": "2026-01-15T10:00:00Z",
     "password": "fade-room-24",
-    "providerId": "prv-fade-room"
+    "providerId": "prv-fade-room",
+    "passwordChangedAt": null
   }
 ]

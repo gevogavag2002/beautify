@@ -2,12 +2,36 @@
 // Change tokens here only; never hardcode hex values in components.
 
 const colors = {
-  primary: { DEFAULT: '#6247E8', pressed: '#4C36C4', soft: '#EDE9FF', deep: '#2E1F8F' },
+  primary: {
+    DEFAULT: '#6247E8',
+    pressed: '#4C36C4',
+    soft: '#EDE9FF',
+    deep: '#2E1F8F',
+    tint: '#7A62F0',
+    dim: '#5038D4',
+    faint: '#F7F5FF',
+  },
   ground: '#F4F2FF',
   sheet: '#FFFFFF',
   ink: '#1E1A33',
   muted: '#6B6585',
   hairline: '#E6E1F7',
+  divider: '#EFEBFB',
+  chevron: '#8C88A0',
+  inkSoft: '#4A4562',
+  mintBright: '#7EE0C8',
+  amberBright: '#FFD58A',
+  dash: { soft: '#CFC6F5', strong: '#B9ACF5' },
+  switchOff: '#D9D3F2',
+  art: { shadow: '#D9D1FA' },
+  disabled: { bg: '#F7F6FB', fg: '#5B5670' },
+  map: { ground: '#E8E3FB', road: '#FFFFFF', park: '#D7EFE6' },
+  // Placeholder tiles for portfolio photos without an image.
+  photo: [
+    { bg: '#E8E3FB', fg: '#8E7FD6' },
+    { bg: '#FFE9F3', fg: '#C77DA2' },
+    { bg: '#E4F6F1', fg: '#6AAE9F' },
+  ],
   status: {
     pending: { fg: '#8A5200', bg: '#FFF3DC' },
     confirmed: { fg: '#0C6A5E', bg: '#DFF5F0' },

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "beautify",
+    "name": "Beautify",
     "slug": "beautify",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,7 +11,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#6247E8",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -23,7 +23,20 @@
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "plugins": ["expo-router", "expo-status-bar", "expo-font", "expo-splash-screen"],
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 160,
+          "resizeMode": "contain",
+          "backgroundColor": "#6247E8"
+        }
+      ]
+    ],
     "scheme": "beautify",
     "experiments": {
       "typedRoutes": true
@@ -38,6 +51,11 @@
         "projectId": "37ad7be3-fb80-4661-8851-ab42229cf348"
       }
     },
-    "owner": "gevorgavag"
+    "owner": "gevorgavag",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6247E8"
+    }
   }
 }

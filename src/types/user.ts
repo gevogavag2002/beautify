@@ -14,6 +14,13 @@ export type User = {
   emailConfirmed: boolean;
   photoUrl: string | null;
   createdAt: string;
+  passwordChangedAt: string | null;
 };
 
-export type ClientStats = { rating: number; ratingCount: number; visits: number; noShows: number };
+export type ClientStats = {
+  rating: number;
+  ratingCount: number;
+  ratingsGiven: number;
+  visits: number;
+  noShows: number;
+};

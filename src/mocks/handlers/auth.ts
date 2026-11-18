@@ -6,8 +6,8 @@ import type { User } from '@/types';
 import { db } from '../db';
 import { body, created, ok, unauthorized, validation } from '../utils';
 
-const publicUser = (u: (typeof db.users)[number]): User => {
-  const { password: _pw, providerId: _pid, ...rest } = u;
+export const publicUser = (u: (typeof db.users)[number]): User => {
+  const { password: _pw, providerId: _pid, clientStats: _cs, ...rest } = u;
   return rest;
 };
 
@@ -57,9 +57,45 @@ export const authHandlers = (mock: MockAdapter) => {
       emailConfirmed: false,
       photoUrl: null,
       createdAt: new Date().toISOString(),
+      passwordChangedAt: null,
       password: input.password,
       providerId: input.role === 'provider' ? `prv-${id}` : undefined,
     });
+    // A provider gets an empty, unlisted business right away: the profile, services and
+    // schedule screens all read it. It is listed once it has at least one service.
+    const type = db.providerTypes.find((t) => t.id === input.providerTypeId);
+    if (input.role === 'provider' && type) {
+      const weekday = { open: '10:00', close: '19:00' };
+      db.providers.push({
+        id: `prv-${id}`,
+        businessName: input.fullName,
+        typeId: type.id,
+        typeName: type.name,
+        about: null,
+        address: '',
+        district: null,
+        lat: 40.17714,
+        lng: 44.50889,
+        photoUrl: null,
+        rating: 0,
+        ratingCount: 0,
+        visits: 0,
+        ratingsGiven: 0,
+        listed: false,
+        autoAccept: false,
+        workingHours: {
+          mon: weekday,
+          tue: weekday,
+          wed: weekday,
+          thu: weekday,
+          fri: weekday,
+          sat: null,
+          sun: null,
+        },
+        services: [],
+        portfolio: [],
+      });
+    }
     return created({ userId: id });
   });
 
@@ -91,6 +127,20 @@ export const authHandlers = (mock: MockAdapter) => {
   mock.onPut('/providers/me/services').reply((config) => {
     const { services } = body<{ services: ServiceInput[] }>(config);
     if (!services?.length) return validation({ services: ['Pick at least one service'] });
+    const u = db.users.find((x) => x.id === db.session.userId);
+    const p = db.providers.find((x) => x.id === u?.providerId);
+    if (p) {
+      const catalog = db.serviceCategories.flatMap((c) => c.services);
+      p.services = services.map((s, i) => ({
+        id: `ps-${Date.now()}-${i}`,
+        catalogServiceId: s.catalogServiceId,
+        name: catalog.find((c) => c.id === s.catalogServiceId)?.name ?? 'Service',
+        description: null,
+        durationMin: s.durationMin,
+        hidden: false,
+      }));
+      p.listed = true;
+    }
     return ok({ ok: true });
   });
 };

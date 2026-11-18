@@ -1,7 +1,16 @@
 import type { Id } from './common';
 
 // Managed by admin on the backend. Never hardcode these in the app.
-export type ProviderType = { id: Id; slug: string; name: string };
+export type ProviderType = {
+  id: Id;
+  slug: string;
+  /** Singular, as on a provider card: "Nail artist". */
+  name: string;
+  /** One word for the Home tiles: "Nails". */
+  shortName: string;
+  /** Plural for search titles: "Nail artists". */
+  pluralName: string;
+};
 
 // A category belongs to one or more provider types; the backend filters by `providerTypeId`.
 export type ServiceCategory = {

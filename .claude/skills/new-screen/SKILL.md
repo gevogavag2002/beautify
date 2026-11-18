@@ -20,7 +20,9 @@ description: Build a screen from the Beautify design canvas. Use when the user a
    The screen reads data only through a TanStack Query hook in its feature. See
    `.claude/rules/mocks.md`.
 5. Register the route in `app/` and wire navigation targets to the links the canvas uses.
-6. Check: `pnpm typecheck`, both light and dark, tap targets ≥44, strings via i18n.
+6. Check: `pnpm typecheck`, `pnpm lint`, tap targets ≥44, strings via i18n, then open the
+   screen in the Android emulator (CLAUDE.md, "Checking screens yourself") and compare the
+   screenshot with the mockup. Follow the screen skeleton in `.claude/rules/styling.md`.
 7. Anything left as a stub (native module not yet added, endpoint not yet decided) goes into
    `docs/BACKLOG.md` in the same change, with the file and what is needed to finish it. Any
    API decision the backend must follow goes into its "Backend contract notes".

@@ -3,3 +3,8 @@ export { default as Button } from './Button';
 export { default as Input } from './Input';
 export { default as Icon } from './Icon';
 export type { IconName } from './Icon';
+export { default as Sheet } from './Sheet';
+export { default as TextArea } from './TextArea';
+export { default as Stepper } from './Stepper';
+export { default as Switch } from './Switch';
+export { default as Segmented } from './Segmented';

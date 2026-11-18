@@ -8,9 +8,10 @@ import FormScreen from '@/components/common/FormScreen';
 import { Button, Icon, Input, Text } from '@/components/ui';
 import { colors } from '@/theme';
 
-import GenderRadio from '../components/GenderRadio';
+import GenderRadio from '@/components/common/GenderRadio';
 import RegisterHeader from '../components/RegisterHeader';
-import { fieldErrors, useRegister } from '../hooks/useAuth';
+import { useRegister } from '../hooks/useAuth';
+import { fieldErrors } from '@/utils/apiError';
 import { totalSteps, useRegisterStore } from '../store';
 
 const initials = (name: string) =>

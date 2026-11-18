@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ev-1",
+    "title": "Bridal beauty open day",
+    "day": 3,
+    "start": "11:00",
+    "end": "17:00",
+    "venueName": "Studio Vera",
+    "tag": "Free entry"
+  },
+  {
+    "id": "ev-2",
+    "title": "Barber battle Yerevan",
+    "day": 10,
+    "start": "18:00",
+    "end": "21:00",
+    "venueName": "The Fade Room",
+    "tag": null
+  }
+]

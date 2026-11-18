@@ -3,32 +3,44 @@
     {
       "id": "pt-barber",
       "slug": "barber",
-      "name": "Barber"
+      "name": "Barber",
+      "shortName": "Barber",
+      "pluralName": "Barbers"
     },
     {
       "id": "pt-hair",
       "slug": "hair",
-      "name": "Hairdresser"
+      "name": "Hairdresser",
+      "shortName": "Hair",
+      "pluralName": "Hairdressers"
     },
     {
       "id": "pt-nails",
       "slug": "nails",
-      "name": "Nail artist"
+      "name": "Nail artist",
+      "shortName": "Nails",
+      "pluralName": "Nail artists"
     },
     {
       "id": "pt-lashes",
       "slug": "lashes",
-      "name": "Lash & brow"
+      "name": "Lash & brow",
+      "shortName": "Lashes",
+      "pluralName": "Lash & brow artists"
     },
     {
       "id": "pt-makeup",
       "slug": "makeup",
-      "name": "Makeup artist"
+      "name": "Makeup artist",
+      "shortName": "Makeup",
+      "pluralName": "Makeup artists"
     },
     {
       "id": "pt-cosmo",
       "slug": "cosmo",
-      "name": "Cosmetologist"
+      "name": "Cosmetologist",
+      "shortName": "Skin",
+      "pluralName": "Cosmetologists"
     }
   ],
   "serviceCategories": [
@@ -57,10 +69,7 @@
           "name": "Hair colouring"
         }
       ],
-      "providerTypeIds": [
-        "pt-barber",
-        "pt-hair"
-      ]
+      "providerTypeIds": ["pt-barber", "pt-hair"]
     },
     {
       "id": "cat-beard",
@@ -77,9 +86,7 @@
           "name": "Hot towel shave"
         }
       ],
-      "providerTypeIds": [
-        "pt-barber"
-      ]
+      "providerTypeIds": ["pt-barber"]
     },
     {
       "id": "cat-nails",
@@ -101,9 +108,7 @@
           "name": "Gel polish"
         }
       ],
-      "providerTypeIds": [
-        "pt-nails"
-      ]
+      "providerTypeIds": ["pt-nails"]
     },
     {
       "id": "cat-lashes",
@@ -120,16 +125,12 @@
           "name": "Brow shaping"
         }
       ],
-      "providerTypeIds": [
-        "pt-lashes"
-      ]
+      "providerTypeIds": ["pt-lashes"]
     },
     {
       "id": "cat-makeup",
       "name": "Makeup",
-      "providerTypeIds": [
-        "pt-makeup"
-      ],
+      "providerTypeIds": ["pt-makeup"],
       "services": [
         {
           "id": "svc-day-makeup",
@@ -151,9 +152,7 @@
     {
       "id": "cat-face",
       "name": "Face care",
-      "providerTypeIds": [
-        "pt-cosmo"
-      ],
+      "providerTypeIds": ["pt-cosmo"],
       "services": [
         {
           "id": "svc-facial-cleansing",

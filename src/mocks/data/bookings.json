@@ -2,111 +2,385 @@
   {
     "id": "bk-1",
     "providerId": "prv-fade-room",
-    "providerName": "The Fade Room",
-    "providerAddress": "12 Tumanyan St",
     "clientId": "usr-client-1",
     "clientName": "Ani K.",
     "services": [
-      { "id": "ps-1", "name": "Haircut", "durationMin": 30 },
-      { "id": "ps-2", "name": "Beard trim", "durationMin": 15 }
+      {
+        "id": "ps-1",
+        "name": "Haircut",
+        "durationMin": 30
+      },
+      {
+        "id": "ps-2",
+        "name": "Beard trim",
+        "durationMin": 15
+      }
     ],
-    "startsAt": "2026-11-06T12:30:00+04:00",
-    "endsAt": "2026-11-06T13:15:00+04:00",
+    "day": 1,
+    "time": "12:30",
     "status": "pending",
     "manual": false,
-    "createdAt": "2026-11-05T18:00:00Z"
+    "rating": null
   },
   {
     "id": "bk-2",
     "providerId": "prv-nailed-it",
-    "providerName": "Nailed It Studio",
-    "providerAddress": "8 Abovyan St",
     "clientId": "usr-client-1",
     "clientName": "Ani K.",
-    "services": [{ "id": "ps-21", "name": "Gel manicure", "durationMin": 60 }],
-    "startsAt": "2026-11-09T11:30:00+04:00",
-    "endsAt": "2026-11-09T12:30:00+04:00",
+    "services": [
+      {
+        "id": "ps-21",
+        "name": "Gel manicure",
+        "durationMin": 60
+      }
+    ],
+    "day": 3,
+    "time": "11:30",
     "status": "confirmed",
     "manual": false,
-    "createdAt": "2026-11-04T09:00:00Z"
+    "rating": null
   },
   {
     "id": "bk-3",
     "providerId": "prv-glow-lab",
-    "providerName": "Glow Lab",
-    "providerAddress": "21 Mashtots Ave",
     "clientId": "usr-client-1",
     "clientName": "Ani K.",
-    "services": [{ "id": "ps-30", "name": "Facial cleansing", "durationMin": 60 }],
-    "startsAt": "2026-10-30T15:00:00+04:00",
-    "endsAt": "2026-10-30T16:00:00+04:00",
+    "services": [
+      {
+        "id": "ps-30",
+        "name": "Facial cleansing",
+        "durationMin": 60
+      }
+    ],
+    "day": -5,
+    "time": "15:00",
     "status": "completed",
     "manual": false,
-    "createdAt": "2026-10-28T09:00:00Z"
+    "rating": null
+  },
+  {
+    "id": "bk-8",
+    "providerId": "prv-fade-room",
+    "clientId": "usr-client-1",
+    "clientName": "Ani K.",
+    "services": [
+      {
+        "id": "ps-1",
+        "name": "Haircut",
+        "durationMin": 30
+      }
+    ],
+    "day": -19,
+    "time": "16:00",
+    "status": "completed",
+    "manual": false,
+    "rating": 5
+  },
+  {
+    "id": "bk-9",
+    "providerId": "prv-barber-lab",
+    "clientId": "usr-client-1",
+    "clientName": "Ani K.",
+    "services": [
+      {
+        "id": "ps-10",
+        "name": "Haircut",
+        "durationMin": 30
+      }
+    ],
+    "day": -33,
+    "time": "10:30",
+    "status": "cancelled",
+    "manual": false,
+    "rating": null
+  },
+  {
+    "id": "bk-10",
+    "providerId": "prv-lash-loft",
+    "clientId": "usr-client-1",
+    "clientName": "Ani K.",
+    "services": [
+      {
+        "id": "ps-71",
+        "name": "Brow shaping",
+        "durationMin": 30
+      }
+    ],
+    "day": -47,
+    "time": "13:00",
+    "status": "declined",
+    "manual": false,
+    "rating": null
   },
   {
     "id": "bk-4",
     "providerId": "prv-fade-room",
-    "providerName": "The Fade Room",
-    "providerAddress": "12 Tumanyan St",
     "clientId": "usr-x1",
     "clientName": "Davit M.",
     "services": [
-      { "id": "ps-1", "name": "Haircut", "durationMin": 30 },
-      { "id": "ps-2", "name": "Beard trim", "durationMin": 15 }
+      {
+        "id": "ps-1",
+        "name": "Haircut",
+        "durationMin": 30
+      },
+      {
+        "id": "ps-2",
+        "name": "Beard trim",
+        "durationMin": 15
+      }
     ],
-    "startsAt": "2026-11-06T11:00:00+04:00",
-    "endsAt": "2026-11-06T11:45:00+04:00",
+    "day": 0,
+    "time": "11:00",
     "status": "confirmed",
     "manual": false,
-    "createdAt": "2026-11-03T09:00:00Z"
+    "rating": null
   },
   {
     "id": "bk-5",
     "providerId": "prv-fade-room",
-    "providerName": "The Fade Room",
-    "providerAddress": "12 Tumanyan St",
     "clientId": "usr-x2",
     "clientName": "Gor",
-    "services": [{ "id": "ps-1", "name": "Haircut", "durationMin": 30 }],
-    "startsAt": "2026-11-06T15:30:00+04:00",
-    "endsAt": "2026-11-06T16:00:00+04:00",
+    "services": [
+      {
+        "id": "ps-1",
+        "name": "Haircut",
+        "durationMin": 30
+      }
+    ],
+    "day": 0,
+    "time": "15:30",
     "status": "confirmed",
     "manual": true,
-    "createdAt": "2026-11-06T07:00:00Z"
+    "rating": null
   },
   {
     "id": "bk-6",
     "providerId": "prv-fade-room",
-    "providerName": "The Fade Room",
-    "providerAddress": "12 Tumanyan St",
     "clientId": "usr-x3",
     "clientName": "Levon A.",
     "services": [
-      { "id": "ps-3", "name": "Skin fade", "durationMin": 45 },
-      { "id": "ps-2", "name": "Beard trim", "durationMin": 15 }
+      {
+        "id": "ps-3",
+        "name": "Skin fade",
+        "durationMin": 45
+      },
+      {
+        "id": "ps-2",
+        "name": "Beard trim",
+        "durationMin": 15
+      }
     ],
-    "startsAt": "2026-11-06T17:00:00+04:00",
-    "endsAt": "2026-11-06T18:00:00+04:00",
+    "day": 0,
+    "time": "17:00",
     "status": "confirmed",
     "manual": false,
-    "createdAt": "2026-11-02T09:00:00Z"
+    "rating": null
   },
   {
     "id": "bk-7",
     "providerId": "prv-fade-room",
-    "providerName": "The Fade Room",
-    "providerAddress": "12 Tumanyan St",
     "clientId": "usr-x4",
     "clientName": "Narek P.",
     "services": [
-      { "id": "ps-1", "name": "Haircut", "durationMin": 30 },
-      { "id": "ps-2", "name": "Beard trim", "durationMin": 15 }
+      {
+        "id": "ps-1",
+        "name": "Haircut",
+        "durationMin": 30
+      },
+      {
+        "id": "ps-2",
+        "name": "Beard trim",
+        "durationMin": 15
+      }
     ],
-    "startsAt": "2026-11-07T12:00:00+04:00",
-    "endsAt": "2026-11-07T12:45:00+04:00",
+    "day": 1,
+    "time": "15:00",
     "status": "pending",
     "manual": false,
-    "createdAt": "2026-11-05T09:00:00Z"
+    "rating": null
+  },
+  {
+    "id": "bk-20",
+    "providerId": "prv-fade-room",
+    "clientId": "usr-bk-20",
+    "clientName": "Tigran H.",
+    "services": [
+      {
+        "id": "ps-3",
+        "name": "Skin fade",
+        "durationMin": 45
+      },
+      {
+        "id": "ps-2",
+        "name": "Beard trim",
+        "durationMin": 15
+      }
+    ],
+    "day": 1,
+    "time": "10:00",
+    "status": "confirmed",
+    "manual": false,
+    "rating": null
+  },
+  {
+    "id": "bk-21",
+    "providerId": "prv-fade-room",
+    "clientId": "usr-bk-21",
+    "clientName": "Aram S.",
+    "services": [
+      {
+        "id": "ps-3",
+        "name": "Skin fade",
+        "durationMin": 45
+      },
+      {
+        "id": "ps-4",
+        "name": "Kids cut",
+        "durationMin": 20
+      }
+    ],
+    "day": 2,
+    "time": "13:00",
+    "status": "confirmed",
+    "manual": false,
+    "rating": null
+  },
+  {
+    "id": "bk-22",
+    "providerId": "prv-fade-room",
+    "clientId": "usr-bk-22",
+    "clientName": "Hayk & sons",
+    "services": [
+      {
+        "id": "ps-1",
+        "name": "Haircut",
+        "durationMin": 30
+      },
+      {
+        "id": "ps-1",
+        "name": "Haircut",
+        "durationMin": 30
+      },
+      {
+        "id": "ps-4",
+        "name": "Kids cut",
+        "durationMin": 20
+      }
+    ],
+    "day": 2,
+    "time": "15:00",
+    "status": "confirmed",
+    "manual": true,
+    "rating": null
+  },
+  {
+    "id": "bk-23",
+    "providerId": "prv-fade-room",
+    "clientId": "usr-bk-23",
+    "clientName": "Karen V.",
+    "services": [
+      {
+        "id": "ps-3",
+        "name": "Skin fade",
+        "durationMin": 45
+      },
+      {
+        "id": "ps-1",
+        "name": "Haircut",
+        "durationMin": 30
+      }
+    ],
+    "day": 4,
+    "time": "16:00",
+    "status": "pending",
+    "manual": false,
+    "rating": null
+  },
+  {
+    "id": "bk-24",
+    "providerId": "prv-fade-room",
+    "clientId": "usr-bk-24",
+    "clientName": "Sergey L.",
+    "services": [
+      {
+        "id": "ps-3",
+        "name": "Skin fade",
+        "durationMin": 45
+      },
+      {
+        "id": "ps-2",
+        "name": "Beard trim",
+        "durationMin": 15
+      }
+    ],
+    "day": 5,
+    "time": "11:00",
+    "status": "confirmed",
+    "manual": false,
+    "rating": null
+  },
+  {
+    "id": "bk-25",
+    "providerId": "prv-fade-room",
+    "clientId": "usr-bk-25",
+    "clientName": "Mher G.",
+    "services": [
+      {
+        "id": "ps-1",
+        "name": "Haircut",
+        "durationMin": 30
+      }
+    ],
+    "day": 5,
+    "time": "13:00",
+    "status": "confirmed",
+    "manual": false,
+    "rating": null
+  },
+  {
+    "id": "bk-26",
+    "providerId": "prv-fade-room",
+    "clientId": "usr-bk-26",
+    "clientName": "Arsen D.",
+    "services": [
+      {
+        "id": "ps-3",
+        "name": "Skin fade",
+        "durationMin": 45
+      },
+      {
+        "id": "ps-1",
+        "name": "Haircut",
+        "durationMin": 30
+      },
+      {
+        "id": "ps-2",
+        "name": "Beard trim",
+        "durationMin": 15
+      }
+    ],
+    "day": 6,
+    "time": "14:30",
+    "status": "pending",
+    "manual": false,
+    "rating": null
+  },
+  {
+    "id": "bk-27",
+    "providerId": "prv-fade-room",
+    "clientId": "usr-bk-27",
+    "clientName": "Vahe T.",
+    "services": [
+      {
+        "id": "ps-1",
+        "name": "Haircut",
+        "durationMin": 30
+      }
+    ],
+    "day": 0,
+    "time": "10:00",
+    "status": "confirmed",
+    "manual": false,
+    "rating": null
   }
 ]

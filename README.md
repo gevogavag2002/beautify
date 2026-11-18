@@ -5,12 +5,13 @@ cosmetologists). Clients send booking requests, providers accept or decline. Bui
 Expo / React Native. Backend (Laravel) and web (Vue 3) live in separate repos.
 
 - Conventions and architecture: `CLAUDE.md`, `.claude/rules/`
-- Status, deferred work, backend contract notes: `docs/BACKLOG.md`
+- Status, deferred work, backend contract notes: `docs/BACKLOG.md`; tasks are GitHub issues
 - Design: Claude Design canvas linked in `CLAUDE.md`
 
 ```bash
 pnpm install
-cp .env.example .env     # EXPO_PUBLIC_USE_MOCKS=true for offline development
+cp .env.example .env     # EXPO_PUBLIC_USE_MOCKS=true for offline development, EXPO_PUBLIC_DEFAULT_LANG=en|ru
 pnpm start               # dev server; open the dev-client app on the phone
 pnpm typecheck
+pnpm lint
 ```

@@ -7,7 +7,7 @@ data is mocked. (MSW was tried and dropped: it needs too many DOM polyfills on H
 
 ```
 src/mocks/
-  data/*.json              seed data per domain (providers, bookings, users, catalog)
+  data/*.json              seed data per domain (providers, bookings, users, catalog, events, ratings, content)
   db.ts                    in-memory DB seeded from data/, mutated by handlers within a session
   handlers/<domain>.ts     `(mock) => { mock.onGet('/path').reply(config => ok(...)) }`, one file per domain
   handlers/index.ts        registerHandlers(mock) calls every domain
@@ -38,4 +38,10 @@ Register more specific RegExp routes before the generic ones (`/slots$` before `
    from app code except `MocksGate`.
 7. Any behaviour the backend must copy (filters, draft accounts, status rules) is written
    into `docs/BACKLOG.md` → "Backend contract notes" in the same change.
-8. Turning mocks off = `EXPO_PUBLIC_USE_MOCKS=false` and restart Metro. Nothing else changes.
+8. Dated seeds (`bookings.json`, `events.json`, `ratings.json`) store `day`: an offset from
+   today, resolved in `db.ts`. Never write a fixed date into a seed: it goes stale.
+9. Seeds are English. `data/ru.json` maps every display string the mock can return (catalogue,
+   descriptions, addresses, help texts, validation messages) to Russian; `mocks/index.ts` swaps
+   them on the way out when the request has `Accept-Language: ru`. A new seed text or handler
+   message gets its entry there in the same change.
+10. Turning mocks off = `EXPO_PUBLIC_USE_MOCKS=false` and restart Metro. Nothing else changes.

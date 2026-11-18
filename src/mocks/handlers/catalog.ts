@@ -8,6 +8,8 @@ export const catalogHandlers = (mock: MockAdapter) => {
   mock.onGet('/catalog/services').reply((config) => {
     const { providerTypeId } = params(config);
     if (!providerTypeId) return validation({ providerTypeId: ['providerTypeId is required'] });
-    return ok(db.serviceCategories.filter((c) => c.providerTypeIds.includes(String(providerTypeId))));
+    return ok(
+      db.serviceCategories.filter((c) => c.providerTypeIds.includes(String(providerTypeId))),
+    );
   });
 };

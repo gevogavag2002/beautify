@@ -6,5 +6,9 @@ import { useSessionStore } from '@/store/sessionStore';
 export default function Index() {
   const user = useSessionStore((s) => s.user);
   if (!user) return <Redirect href="/(auth)/login" />;
-  return <Redirect href={user.role === 'provider' ? '/(provider)/schedule' : '/(client)'} />;
+  return (
+    <Redirect
+      href={user.role === 'provider' ? '/(provider)/(tabs)/schedule' : '/(client)/(tabs)'}
+    />
+  );
 }

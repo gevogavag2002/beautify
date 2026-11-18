@@ -4,26 +4,15 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 
 import FormScreen from '@/components/common/FormScreen';
+import ProviderTypeCard from '@/components/common/ProviderTypeCard';
 import { Button, Icon, Text, type IconName } from '@/components/ui';
-import { icons } from '@/components/ui/Icon';
 import { colors } from '@/theme';
 import type { Role } from '@/types';
 
-import InfoNote from '../components/InfoNote';
+import InfoNote from '@/components/common/InfoNote';
 import RegisterHeader from '../components/RegisterHeader';
-import { useProviderTypes } from '../hooks/useCatalog';
+import { useProviderTypes } from '@/hooks/useCatalog';
 import { totalSteps, useRegisterStore } from '../store';
-
-// Icon tint per provider type, keyed by slug (types themselves come from the backend).
-const typeTint: Record<string, { bg: string; fg: string }> = {
-  barber: { bg: colors.primary.soft, fg: colors.primary.pressed },
-  hair: colors.accent.amber,
-  nails: colors.accent.rose,
-  lashes: colors.accent.mint,
-  makeup: colors.accent.amber,
-  cosmo: colors.accent.sky,
-};
-const typeIcon = (slug: string): IconName => (slug in icons ? (slug as IconName) : 'sparkle');
 
 export default function RoleScreen() {
   const { t } = useTranslation();
@@ -189,40 +178,18 @@ export default function RoleScreen() {
           <View className="flex-row flex-wrap" style={{ gap: 8 }} accessibilityRole="radiogroup">
             {(types.data ?? []).map((tp) => {
               const sel = tp.id === providerTypeId;
-              const tint = typeTint[tp.slug] ?? typeTint.barber;
               return (
-                <Pressable
+                <ProviderTypeCard
                   key={tp.id}
-                  accessibilityRole="radio"
-                  accessibilityState={{ checked: sel }}
+                  type={tp}
+                  selected={sel}
                   onPress={() =>
                     patch({
                       providerTypeId: sel ? null : tp.id,
                       providerTypeName: sel ? null : tp.name,
                     })
                   }
-                  className="flex-row items-center"
-                  style={{
-                    width: '48.5%',
-                    height: 60,
-                    borderRadius: 18,
-                    borderWidth: 2,
-                    paddingHorizontal: 10,
-                    gap: 10,
-                    borderColor: sel ? colors.primary.DEFAULT : colors.sheet,
-                    backgroundColor: sel ? '#F7F5FF' : colors.sheet,
-                  }}
-                >
-                  <View
-                    className="items-center justify-center rounded-full"
-                    style={{ width: 40, height: 40, backgroundColor: tint.bg }}
-                  >
-                    <Icon name={typeIcon(tp.slug)} size={20} color={tint.fg} strokeWidth={2.1} />
-                  </View>
-                  <Text weight={800} className="flex-1 text-[15px] leading-[19px] text-ink">
-                    {tp.name}
-                  </Text>
-                </Pressable>
+                />
               );
             })}
           </View>

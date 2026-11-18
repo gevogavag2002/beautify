@@ -7,17 +7,19 @@ type Props = {
   size?: number;
   color: string;
   strokeWidth?: number;
+  /** Solid shape (rating stars): fills with `color` and drops the stroke. */
+  filled?: boolean;
   style?: object;
 };
 
-export default function Icon({ name, size = 24, color, strokeWidth = 2, style }: Props) {
+export default function Icon({ name, size = 24, color, strokeWidth = 2, filled, style }: Props) {
   return (
     <Svg
       width={size}
       height={size}
       viewBox="0 0 24 24"
-      fill="none"
-      stroke={color}
+      fill={filled ? color : 'none'}
+      stroke={filled ? 'none' : color}
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
